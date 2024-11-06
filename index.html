@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <section class="slider-container">
+        <div class="slider-images">
+            <div class="slider-img">
+                <img src="/image.png" alt="">
+                <h1>Carl Sagan</h1>
+                <div class="details">
+                    <h2>Carl Sagan</h2>
+                    <p>Astronomo</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="/image.png" alt="">
+                <h1>Carl Sagan</h1>
+                <div class="details">
+                    <h2>Carl Sagan</h2>
+                    <p>Astronomo</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="/image.png" alt="">
+                <h1>Stephen</h1>
+                <div class="details">
+                    <h2>Stephen Hawking</h2>
+                    <p>Astronomo</p>
+                </div>
+            </div>
+
+            <div class="slider-img active">
+                <img src="/image.png" alt="">
+                <h1>Carl</h1>
+                <div class="details">
+                    <h2>Carl Sagan</h2>
+                    <p>Astronomo</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="/image.png" alt="">
+                <h1>Leonardo</h1>
+                <div class="details">
+                    <h2>Leonardo da Vinci</h2>
+                    <p>Astronomo</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="/image.png" alt="">
+                <h1>Carl Sagan</h1>
+                <div class="details">
+                    <h2>Carl Sagan</h2>
+                    <p>Astronomo</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="/image.png" alt="">
+                <h1>Carl Sagan</h1>
+                <div class="details">
+                    <h2>Carl Sagan</h2>
+                    <p>Astronomo</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sliderImages = document.querySelectorAll('.slider-img');
+
+            sliderImages.forEach(image => {
+                image.addEventListener('click', function () {
+                    sliderImages.forEach(img => img.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });;
+    </script>
+</body>
+
+</html>
